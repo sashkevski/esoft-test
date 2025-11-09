@@ -8,7 +8,7 @@ from pathlib import Path
 class Config:
     """Конфигурация приложения"""
 
-    # Базовая дирректория расположения приложения
+    # Базовая директория расположения приложения
     BASE_DIR = Path(__file__).parent
 
     # Сепаратор для старой таблицы
@@ -115,7 +115,7 @@ config = Config()
 def setup_logger(
     log_level: str = "INFO", without_logs: bool = False, silent: bool = False
 ) -> None:
-    """Конфигурация логирования, создание дирректории для логов"""
+    """Конфигурация логирования, создание директории для логов"""
 
     if silent:
         logging.getLogger().setLevel(logging.CRITICAL + 1)

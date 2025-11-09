@@ -82,7 +82,7 @@ class PlotBuilder:
 
     @exceptions_handler(logger=logger)
     def plot_area_comparison(self, features_df: pd.DataFrame) -> Figure:
-        """Создаёт график сранения распределения площадей между выборками"""
+        """Создаёт график сравнения распределения площадей между выборками"""
 
         fig = self._plot_comparison_bars(
             features_df,
@@ -93,13 +93,13 @@ class PlotBuilder:
             "Количество объектов",
         )
 
-        logger.debug("График сранения распределения площадей между выборками успешно создан")
+        logger.debug("График сравнения распределения площадей между выборками успешно создан")
 
         return fig
 
     @exceptions_handler(logger=logger)
     def plot_price_comparison(self, features_df: pd.DataFrame) -> Figure:
-        """Создаёт график сранения распределения цен между выборками"""
+        """Создаёт график сравнения распределения цен между выборками"""
 
         fig = self._plot_comparison_bars(
             features_df,
@@ -111,6 +111,6 @@ class PlotBuilder:
             "Количество объектов",
         )
 
-        logger.debug("График сранения распределения цен между выборками успешно создан")
+        logger.debug("График сравнения распределения цен между выборками успешно создан")
 
         return fig
